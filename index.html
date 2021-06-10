@@ -5,11 +5,17 @@
     <title></title>
     <link rel="stylesheet" href="stylesheets/style.css">
     <style media="screen">
+    *{
+      overflow: hidden;
+    }
+      body{
+        padding-left: calc(100vw / 21);
+        padding-right: calc(100vw / 21);
 
+      }
       nav{
         height: 150px;
         justify-content: space-between;
-        padding-left: 
       }
       a{
         color: black;
@@ -22,7 +28,7 @@
 
       }
       hr{
-        width: 90%;
+        width: 100%;
         /* size: 4; */
         color: black;
         border-top-color: black;
@@ -36,6 +42,10 @@
       .line{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        /* margin-left: calc(100vw / 21); */
+        /* margin-right: calc(100vw / 21); */
+        align-items: center;
       }
       .option{
         display: flex;
@@ -43,9 +53,61 @@
         /* margin-left: 2vw; */
       }
       .option a{
-        margin-left: 2vw;
+        margin-left: 4vw;
+      }
+      .logo{
+        width: 300px;
+        height: 90px;
+        background-image: url('images/logo.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .first{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 2%;
+        margin-top: 80px;
+        grid-template-columns: 3fr 2fr 1fr;
 
       }
+      .m_1{
+        width: 3fr;
+        display: flex;
+        flex-direction: column;
+      }
+      .m_2{
+        width:2fr;
+        display: flex;
+      }
+      .m_3{
+        width:1fr;
+        display: flex;
+      }
+      .main_img {
+        width: 45vw;
+        height: 28vw;
+        background-image: url('images/main_img.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1{
+        font-size: 36px;
+        display: flex;
+      }
+      h2{
+        font-size: 26px;
+        display: flex;
+      }
+      .comments{
+        display: flex;
+        font-size: 14px;
+        color: #C75353;
+      }
+
     </style>
   </head>
   <body>
@@ -53,7 +115,7 @@
     <nav>
       <div class="line">
 
-          <a href="">index</a>
+          <a class="logo" href=""></a>
             <div class="option">
               <a href="#">НОВОСТИ</a>
               <a href="#">АФИША</a>
@@ -61,10 +123,27 @@
               <a href="#">ПРОЕКТЫ</a>
             </div>
       </div>
-
       <hr>
     </nav>
 
+    <main>
+      <div class="first">
+          <div class="m_1">
+              <div class="main_img"></div>
+              <p class="comments">20 июня 2021, 16:00</p>
+              <h1>Состоялось торжественное открытие магазина сыра «КРЫСЫР». </h1>
+          </div>
+          <div class="m_2">
+            <h2>ГЛАВНЫЕ НОВОСТИ</h2>
+          </div>
+          <div class="m_3">
+            <h2>СПЕЦПРОЕКТЫ</h2>
+          </div>
+      </div>
+
+
+
+    </main>
 
 
 

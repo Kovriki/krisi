@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'saygon';
+  src: url('saygon.ttf');
+}
 body{
   background-color: #FFFDEF;
+  font-family: 'saygon';
 }
