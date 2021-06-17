@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/mer.css">
+    <style media="screen">
+        .mer_box{
+          width: 100%;
+          height: auto;
+          position: relative;
+          display: flex;
+          margin-top: 60px;
+          flex-wrap: wrap;
+        }
+        .half{
+          width: 50%;
+          flex-direction: column;
+        }
+        .half h2 {
+          margin-bottom: 40px;
+        }
+        p{
+          line-height: 1.4em;
+          padding-bottom:35px;
+          width: 80%;
+        }
+        .mer_img{
+          width: 50%;
+              height: 260px;
+              background-color: gray;
+              border: 1px solid black;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              margin-bottom: 35px;
+        }
+        .posters_box{
+          width: 100%;
+          display:flex;
+          flex-direction: row;
+        }
+        .vibori {
+          display: flex;
+          justify-content: space-around;
+          padding-left: 2em;
+          padding-right:2em;
+          flex-direction: column;
+        }
+        #vm_1{background-image: url("images/vm_01.png"); }
+        #vm_2{background-image: url("images/vm_02.png"); }
+        #vm_3{background-image: url("images/vm_03.png"); }
+        h2{
+          /* width: 100%; */
+        }
+    </style>
+  </head>
+  <body>
+        <nav>
+          <div class="line">
+              <a class="logo" href="index.html"></a>
+                <div class="option">
+                  <a href="news.html">НОВОСТИ</a>
+                  <a href="#">АФИША</a>
+                  <a href="mer.html">МЭР</a>
+                  <a href="#">ПРОЕКТЫ</a>
+                </div>
+          </div>
+          <hr>
+        </nav>
+
+      <main>
+        <div class="mer_box">
+          <div class="half">
+            <h2>МЭР</h2>
+            <h2>Фет Таврирович Хвостиков</h2>
+            <p>Всеми любимый мэр города Крысити. Родился в деревне Горбатово в 1960 году. На данный момент является лучшим мэром за всю историю города.</p>
+            <p>Политическая деятельность началась в 2020 году после выборов мэра. Это было одно из самых масштабных мероприятий, проведенных в Крысити, в ходе которого были созданы плакаты, поддерживающие разных кандидатов.</p>
+          </div>
+
+          <div class="mer_img mer"></div>
+        </div>
+        <hr>
+        <div class="mer_box vibori">
+          <h2>ВЫБОРЫ МЭРА</h2>
+          <div class="option">
+            <div class="posters" id="vm_1"></div>
+            <div class="posters" id="vm_2"></div>
+            <div class="posters" id="vm_3"></div>
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+      </main>
+      <footer>
+        <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+        <div class="link_box">ПОДДЕРЖКА</div>
+        <div class="link_box">RATCITY 2021</div>
+      </footer>
+
+
+  </body>
+</html>
