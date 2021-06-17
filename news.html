@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+      <style media="screen">
+        .n_wrap{
+          width: 100%;
+          height: auto;
+          display:flex;
+          flex-wrap: wrap;
+          margin-bottom: 60px;
+        }
+        .n_card {
+          width: 27%;
+          display: flex;
+          flex-direction: column;
+          padding-right: 2em;
+          padding-left:  2em;
+          position: relative;
+        }
+        .n_photo{
+          width: 100%;
+          height: 15em;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        .n_card p{
+          width: 80%;
+          padding-bottom: 30px;
+          line-height: 1.4em;
+        }
+        .bor_right{
+          border-right: 8px solid black;
+
+        }
+        .bor_bottom{
+          border-bottom: 8px solid black;
+        }
+        .pad_top {
+          padding-top: 2em;
+        }
+        /* .first_line{
+          border-bottom:
+        } */
+        #np_1{background-image: url("images/news/np_02.png");}
+        #np_2{background-image: url("images/news/np_01.png");}
+        #np_3{background-image: url("images/news/np_06.png");}
+        #np_4{background-image: url("images/news/np_03.png");}
+        #np_5{background-image: url("images/news/np_04.png");}
+        #np_6{background-image: url("images/news/np_05.png");}
+        .news{
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .n_card a {
+          font-size: 16px;
+          text-decoration: none;
+          height: 16px;
+          position: absolute;
+          bottom: 0;
+        }
+        .pad_top > p:last-child{
+          padding-bottom:0;
+        }
+      </style>
+  </head>
+  <body>
+    <nav>
+      <div class="line">
+
+          <a class="logo" href="index.html"></a>
+            <div class="option">
+              <a href="#">НОВОСТИ</a>
+              <a href="#">АФИША</a>
+              <a href="#">МЭР</a>
+              <a href="#">ПРОЕКТЫ</a>
+            </div>
+      </div>
+      <hr>
+    </nav>
+    <main>
+      <h2 class="news">НОВОСТИ</h2>
+      <div class="n_wrap">
+        <div class="n_card bor_right bor_bottom">
+          <div class="n_photo" id="np_1"></div>
+          <p class="comments">12 июня 2021, 19:00</p>
+          <p>О реконструкции домов мэрия задумывалась еще 6 лет назад, когда фасад домов стал покрываться паутинкой из трещин.</p>
+          <p>Но реализовать задуманное смогли только в 2020 году, когда
+              к службе пришел Ф.Т.Хвостиков.</p>
+        </div>
+        <div class="n_card bor_right bor_bottom">
+          <div class="n_photo" id="np_2"></div>
+          <p class="comments">15 июня 2021, 21:00</p>
+          <p>Недавно провели самую массовую акцию поддержки малоимущих семей. </p>
+          <p>В ходе нее было проведено 5 мероприятий и выплата денежных средств каждому.</p>
+        </div>
+        <div class="n_card bor_bottom">
+          <div class="n_photo" id="np_3"></div>
+          <p class="comments">19 июня 2021, 14:00</p>
+          <p>Произошла невероятная новость в Центральном парке.</p>
+          <p>Крыс Анатолий Сухолапов спас стаю утят от верной гибели! В честь него в этот день с 2022 года будет официальный праздник «День Анатолия».</p>
+        </div>
+
+
+        <div class="n_card bor_right pad_top">
+          <div class="n_photo" id="np_4"></div>
+          <p class="comments">17 июня 2021, 12:00</p>
+          <p>Теперь ваши любимые каналы можно смотреть через онлайн-телевизор бесплатно.
+            Изучите глубже, кликнув
+            на «Подробнее».</p>
+            <a href="https://grustnoteka.github.io/RatTV/">Подробнее</a>
+        </div>
+        <div class="n_card bor_right pad_top">
+          <div class="n_photo" id="np_5"></div>
+          <p class="comments">26 августа 2020, 15:30</p>
+          <p>В 2019 году появилась острая нехватка больничных мест, поэтому возникла необходимость в новой больнице, которую достроили
+              в конце августа 2020 года.</p>
+          <p>В честь этого на главной площади города устроили салют. </p>
+        </div>
+        <div class="n_card pad_top">
+          <div class="n_photo" id="np_6"></div>
+          <p class="comments">21 января 2021, 10:00</p>
+          <p>В этом году Крысити отмечает юбилей — 60 лет городу.  Вас ждут много фестивалей, концертов, салютов и еды.  </p>
+        </div>
+      </div>
+      <hr>
+
+
+
+
+
+
+    </main>
+    <footer>
+      <div class="link_box"><a href="https://portfolio.hse.ru/Student/16420">ПОРТФОЛИО</a></div>
+      <div class="link_box">ПОДДЕРЖКА</div>
+      <div class="link_box">RATCITY 2021</div>
+    </footer>
+  </body>
+</html>
