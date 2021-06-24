@@ -200,6 +200,28 @@ hr{
   background-repeat: no-repeat;
 
   }
+
+  .a, .b, .vm, .ny, .de, .v, .rd, .nb, .sh {
+    cursor: pointer;
+  }
+
+
+
+  #a_1,#a_2,#a_3,
+  #b1,#b2,#b3,
+  #vm_01,#vm_02,#vm_03,
+  #ny_01,#ny_02,#ny_03,
+  #de_01,#de_02,#de_03,
+  #v_01,#v_02,#v_03,
+  #rd_01,#rd_02,#rd_03,
+  #nb_01,
+  #lost{
+
+  }
+
+
+
+
   /* день города */
   #a_1{background-image: url('../images/a1.png');}
   #a_2{background-image: url('../images/a2.png');}
