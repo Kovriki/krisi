@@ -63,6 +63,11 @@
       .fab_04{background-image: url("images/renders/fab_04.png");}
 
       .block{display: none;}
+
+      .red{color: #C75353;}
+      .option p{
+        cursor: pointer;
+      }
     </style>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -75,18 +80,26 @@
         });
 
         $(".ex_p").click(function(){
+          $(this).addClass("red")
+
           $(".ex").removeClass("block");
           $(".ff, .sf, .fab").addClass("block");
         });
         $(".ff_p").click(function(){
+          $(this).addClass("red")
+
           $(".ff").removeClass("block");
           $(".ex, .sf, .fab").addClass("block");
         });
         $(".sf_p").click(function(){
+          $(this).addClass("red")
+
           $(".sf").removeClass("block");
           $(".ex, .ff, .fab").addClass("block");
         });
         $(".fab_p").click(function(){
+          $(this).addClass("red")
+
           $(".fab").removeClass("block");
           $(".ex, .ff, .sf").addClass("block");
         });
@@ -102,7 +115,7 @@
               <a href="news.html">НОВОСТИ</a>
               <a href="index.html">АФИША</a>
               <a href="mer.html">МЭР</a>
-              <a href="index.html">ПРОЕКТЫ</a>
+              <a href="project.html">ПРОЕКТЫ</a>
             </div>
       </div>
       <hr>
@@ -111,7 +124,7 @@
 
       <h2>ПРОЕКТЫ ГОРОДА</h2>
       <div class="option">
-        <p class="ex_p">Вид снаружи</p>
+        <p class="ex_p red">Вид снаружи</p>
         <p class="ff_p">1 этаж</p>
         <p class="sf_p">2 этаж</p>
         <p class="fab_p">Фабрика</p>
