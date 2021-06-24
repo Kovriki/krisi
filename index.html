@@ -5,19 +5,36 @@
     <title></title>
     <link rel="stylesheet" href="stylesheets/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="javascripts/jquery-3.1.1.js" charset="utf-8"></script> -->
     <style media="screen">
 
 
     </style>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(function() {
+      	$('.sidebar a').each(function() {
+      		$(this).on('click', function(e) {
+      			e.preventDefault();
+      			var scrollTo = $(this).attr('href');
+      			var whitespace = scrollTo == '#afishaa' ? 70 : 30;
+      			$('html,body').animate({
+      				scrollTop: $(scrollTo).offset().top - whitespace
+      			}, 1000);
+      		});
+      	});
+      });
+      })
+    </script>
   </head>
   <body>
 
     <nav>
       <div class="line">
           <a class="logo" href=""></a>
-            <div class="option">
+            <div class="option sidebar">
               <a href="news.html">НОВОСТИ</a>
-              <a href="index.html">АФИША</a>
+              <a href="#afishaa">АФИША</a>
               <a href="mer.html">МЭР</a>
               <a href="index.html">ПРОЕКТЫ</a>
             </div>
@@ -71,7 +88,7 @@
           </div>
       </div>
 
-      <div class="second">
+      <div class="second"  id="afishaa">
         <h1>АФИША</h1>
         <div class="option">
           <p>День города</p>
