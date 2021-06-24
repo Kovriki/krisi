@@ -8,7 +8,10 @@
         <!-- <script src="javascripts/jquery-3.1.1.js" charset="utf-8"></script> -->
     <style media="screen">
 
+.red{
+  color: #C75353;
 
+}
     </style>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -24,6 +27,58 @@
       		});
       	});
       });
+
+      //
+      ///
+      $(".ny").click(function(){
+        $(this).addClass("red")
+        $(".p_1").attr("id", "ny_01");
+        $(".p_2").attr("id", "ny_02");
+        $(".p_3").attr("id", "ny_03");
+      })
+      $(".a").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "a_1");
+        $(".p_2").attr("id", "a_2");
+        $(".p_3").attr("id", "a_3");
+      })
+      $(".de").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "de_01");
+        $(".p_2").attr("id", "de_02");
+        $(".p_3").attr("id", "de_03");
+      })
+      $(".v").click(function(){
+        $(this).addClass("red")
+
+        $(".p_1").attr("id", "v_01");
+        $(".p_2").attr("id", "v_02");
+        $(".p_3").attr("id", "v_03");
+      })
+
+
+      $(".rd").click(function(){
+        $(".p_p_1").attr("id", "rd_01");
+        $(".p_p_2").attr("id", "rd_02");
+        $(".p_p_3").attr("id", "rd_03");
+      })
+      $(".b").click(function(){
+        $(".p_p_1").attr("id", "b1");
+        $(".p_p_2").attr("id", "b2");
+        $(".p_p_3").attr("id", "b3");
+      })
+      $(".nb").click(function(){
+        $(".p_p_1").attr("id", "lost");
+        $(".p_p_2").attr("id", "nb_01");
+        $(".p_p_3").attr("id", "lost");
+      })
+      $(".sh").click(function(){
+        let url = "project.html";
+        location.href = "project.html";
+
+      })
       })
     </script>
   </head>
@@ -32,9 +87,11 @@
     <nav>
       <div class="line">
           <a class="logo" href=""></a>
-            <div class="option sidebar">
+            <div class="option">
               <a href="news.html">НОВОСТИ</a>
-              <a href="#afishaa">АФИША</a>
+              <div class="sidebar">
+                <a href="#afishaa">АФИША</a>
+              </div>
               <a href="mer.html">МЭР</a>
               <a href="index.html">ПРОЕКТЫ</a>
             </div>
@@ -91,15 +148,15 @@
       <div class="second"  id="afishaa">
         <h1>АФИША</h1>
         <div class="option">
-          <p>День города</p>
-          <p>Новый год</p>
-          <p>День единства</p>
-          <p>Выставка</p>
+          <p class="a">День города</p>
+          <p class="ny">Новый год</p>
+          <p class="de">День единства</p>
+          <p class="v">Выставка</p>
         </div>
         <div class="option post">
-          <div class="posters" id="a_1"></div>
-          <div class="posters" id="a_2"></div>
-          <div class="posters" id="a_3"></div>
+          <div class="posters p_1" id="a_1"></div>
+          <div class="posters p_2" id="a_2"></div>
+          <div class="posters p_3" id="a_3"></div>
         </div>
       </div>
 
@@ -120,15 +177,15 @@
       <div class="fourth">
         <h1>ПРОЕКТЫ ГОРОДА</h1>
         <div class="option">
-          <p>Реконструкция домов</p>
-          <p>Социальная реклама</p>
-          <p>Новая больница</p>
-          <p>Магазин сыра</p>
+          <p class="rd">Реконструкция домов</p>
+          <p class="b">Социальная реклама</p>
+          <p class="nb">Новая больница</p>
+          <p class="sh">Магазин сыра</p>
         </div>
         <div class="option post">
-          <div class="posters" id="p_1"></div>
-          <div class="posters" id="p_2"></div>
-          <div class="posters" id="p_3"></div>
+          <div class="posters p_p_1" id="p_1"></div>
+          <div class="posters p_p_2" id="p_2"></div>
+          <div class="posters p_p_3" id="p_3"></div>
         </div>
       </div>
 

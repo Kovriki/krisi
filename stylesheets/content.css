@@ -200,9 +200,37 @@ hr{
   background-repeat: no-repeat;
 
   }
+  /* день города */
   #a_1{background-image: url('../images/a1.png');}
   #a_2{background-image: url('../images/a2.png');}
   #a_3{background-image: url('../images/a3.png');}
+  /* Социальная реклама */
+  #b1{background-image: url('../images/b1.png');}
+  #b2{background-image: url('../images/b2.png');}
+  #b3{background-image: url('../images/b3.png');}
+  /* выборы мэра */
+  #vm_01{background-image: url('../images/vm_01.png');}
+  #vm_02{background-image: url('../images/vm_02.png');}
+  #vm_03{background-image: url('../images/vm_03.png');}
+  /* новый год */
+  #ny_01{background-image: url('../images/ny_01.png');}
+  #ny_02{background-image: url('../images/ny_02.png');}
+  #ny_03{background-image: url('../images/ny_03.png');}
+  /* день единства */
+  #de_01{background-image: url('../images/de_01.png');}
+  #de_02{background-image: url('../images/de_02.png');}
+  #de_03{background-image: url('../images/de_03.png');}
+  /* выставка */
+  #v_01{background-image: url('../images/v_01.png');}
+  #v_02{background-image: url('../images/v_02.png');}
+  #v_03{background-image: url('../images/v_03.png');}
+  /* реконструкция домов */
+  #rd_01{background-image: url('../images/rd_01.png');}
+  #rd_02{background-image: url('../images/rd_02.png');}
+  #rd_03{background-image: url('../images/rd_03.png');}
+  /* новая больница */
+  #nb_01{background-image: url('../images/nb_01.png');}
+  #lost{background-color: #FFFDEF;}
 
   .post {
     width: 100%;
