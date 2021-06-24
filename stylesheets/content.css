@@ -94,7 +94,7 @@ hr{
     /* width:1fr; */
     display: flex;
     width: 60%;
-    height: 65%;
+    height: 75%;
     flex-direction: column;
     border-right: 8px solid black;
     justify-content: space-between;
